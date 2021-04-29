@@ -1,0 +1,130 @@
+* {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.head {
+	width: 1214.72px;
+	height: 56px;
+	background-color: #343a40;
+	margin: 0 auto;
+	padding: .5rem 1rem;
+	box-sizing: border-box;
+}
+
+.logo {
+	display: inline-block;
+	width: 115.38px;
+	height: 39.6px;
+	color: #fff;
+	margin-right: 10px;
+	margin-left: 10px;
+	font-size: 1.2rem;
+	box-sizing: border-box;
+	line-height: 39.6px;
+	float: left;
+}
+
+.right {
+	width: 1041.35px;
+	height: 40px;
+	float: right;
+	display: flex;
+}
+
+.right li {
+	float: left;
+}
+
+.h {
+	display: inline-block;
+	width: 44.43px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: rgba(255, 255, 255, .5);
+}
+
+.name {
+	text-align: left;
+	line-height: 40px;
+	color: rgba(255, 255, 255, .5);
+	display: inline-block;
+	width: 150px;
+	height: 40px;
+	margin-left: 10px;
+	position: absolute;
+	top: 8px;
+}
+
+.h:hover,.name:hover {
+	color: rgba(255, 255, 255, .75);
+}
+
+.jt {
+	background-image: url(../image/businessJT.jpg);
+	display: inline-block;
+	position: relative;
+	top: 3px;
+	width: 22px;
+	height: 15px;
+}
+
+.down {
+	padding: .5rem 0;
+	margin: 2rem 0 0;
+	z-index: 100;
+	position:fixed;
+	font-size: 1rem;
+	text-align: left;
+	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: .25rem;
+	box-sizing: border-box;
+}
+
+.down a {
+	padding: .25rem 1.5rem;
+	font-weight: 400;
+	color: #212529;
+	text-align: inherit;
+	box-sizing: border-box;
+}
+.key{
+	width: 203.6px;
+	height: 38px;
+	padding: .375rem .75rem;
+	    font-size: 1rem;
+	    line-height: 1.5;
+	    color: #495057;
+	    background-color: #fff;
+	    border: 1px solid #ced4da;
+	    border-radius: .25rem;
+		box-sizing: border-box;
+		position: absolute;
+		left:1070px;
+		outline: none;
+}
+.sub{
+		color: #28a745;
+	    background-color: transparent;
+		position: absolute;
+		left:1285px;
+		width: 73.03px;
+		height: 38px;
+		outline: none;
+		border: 1px solid #28a745;
+		    padding: .375rem .75rem;
+		    font-size: 1rem;
+		    line-height: 1.5;
+		    border-radius: .25rem;
+			box-sizing: border-box;
+}
+.sub:hover{
+	color: #fff;
+	    background-color: #28a745;
+	    border-color: #28a745;
+		cursor: pointer;
+}

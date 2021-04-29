@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.StarBucks.dao.OrderConfirmDao">
+	<insert id="insert">
+		insert into star_orderitem(order_id,goods_id,num) 
+		value 
+		(#{oc.orderId},#{oc.goodsId},#{oc.num})
+	</insert>
+	<select id="FindAllByOrderId" resultType="com.StarBucks.bean.OrderItem">
+		select * from star_orderitem where order_id = #{OId}
+	</select>
+	<delete id="delOrderItem">
+		delete from star_orderitem where order_id=#{OrderConfirmId}
+	</delete>
+</mapper>

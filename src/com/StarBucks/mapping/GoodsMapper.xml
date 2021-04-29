@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.StarBucks.dao.GoodsDao">
+	<select id="FindAll" resultType="com.StarBucks.bean.Goods">
+		select * from star_goods where status=1
+	</select>
+	<select id="FindAllNos" resultType="com.StarBucks.bean.Goods">
+		select * from star_goods
+	</select>
+	<select id="ByType" resultType="com.StarBucks.bean.Goods">
+		select * from star_goods where status=1 and type = #{type}
+	</select>
+	<select id="ByGoodId" resultType="com.StarBucks.bean.Goods">
+		select * from star_goods where status=1 and item_id = #{Id}
+	</select>
+	<select id="ByGoodName" resultType="com.StarBucks.bean.Goods">
+		select * from star_goods where item_name = #{Name}
+	</select>
+	<update id="updateStatus">
+		update star_goods set 
+		status=#{status}
+		where item_id=#{Id}
+	</update>
+	<update id="update">
+		update star_goods set 
+		price = #{price},
+		details = #{details},
+		item_name = #{name}
+		where item_id = #{Id}
+	</update>
+		<insert id="insert">
+		insert into star_goods(item_name,price,item_img,details,status,type) 
+		value 
+		(#{g.item_name},#{g.price},#{g.item_img},${g.details},${g.status},${g.type})
+	</insert>
+</mapper>

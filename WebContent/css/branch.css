@@ -1,0 +1,157 @@
+button {
+	border: none;
+}
+
+#container {
+	width: 1275.5px;
+	margin:0 auto;
+	//margin-left:121.45px;
+	//margin_right:121.45px;
+}
+
+#left_d {
+	width: 281px;
+	float: left;
+}
+
+#right_d {
+	width: 904px;
+	float: right;
+	background-clip: border-box;
+	border: 1px solid rgba(0, 0, 0, .125);
+	border-radius: .25rem;
+	background-color: #f8f9fa;
+	text-align: center;
+	box-sizing:border-box;
+}
+
+.All {
+	width: 281px;
+	height: 50px;
+	background-color: #007bff;
+	margin-top: 10px;
+	line-height: 50px;
+	padding-left: 20px;
+	box-sizing: border-box;
+	color: white;
+	border-radius: .25rem;
+	box-sizing:border-box;
+}
+
+.All:hover {
+	cursor: pointer;
+}
+
+.ByArea {
+	width: 281px;
+	height: 167px;
+	margin-top: 30px;
+	background-color: #fff;
+	background-clip: border-box;
+	border: 1px solid rgba(0, 0, 0, .125);
+	border-radius: .25rem;
+	box-sizing:border-box;
+}
+
+.title {
+	width: 281;
+	height: 50px;
+	background-color: rgba(0, 0, 0, .03);
+	border-bottom: 1px solid rgba(0, 0, 0, .125);
+	border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+	text-align: center;
+	line-height: 50px;
+	font-size: 17px;
+	box-sizing:border-box;
+}
+
+#byArea {
+	width: 204px;
+	height: 38px;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	padding: .375rem .75rem;
+	outline: none;
+	transition: all 0.5s;
+	font-size: 15px;
+	margin-top: 20px;
+	margin-left: 33.5px;
+	box-sizing: border-box;
+}
+
+#byArea:focus {
+	color: #495057;
+	background-color: #fff;
+	border-color: #80bdff;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+
+#byArea_sub {
+	width: 58px;
+	height: 35px;
+	color: #fff;
+	background-color: #0062cc;
+	border-color: #005cbf;
+	outline: none;
+	cursor: pointer;
+	border-radius: 6px;
+	font-size: 15px;
+	margin: 12px 101.5px;
+	box-sizing:border-box;
+}
+
+#byArea_sub:hover {
+	color: #fff;
+	background-color: #0069d9;
+	border-color: #0062cc;
+	box-sizing:border-box;
+}
+
+.cardHeader {
+	border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+	width: 902px;
+	height: 50px;
+	padding: .75rem 1.25rem;
+	margin-bottom: 0;
+	background-color: rgba(0, 0, 0, .03);
+	border-bottom: 1px solid rgba(0, 0, 0, .125);
+	box-sizing: border-box;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 17px;
+	box-sizing:border-box;
+}
+
+.cardBody {
+	padding: 1.25rem;
+}
+
+.T_body {
+	border-collapse: collapse;
+	width: 860.8px;
+	margin: 0 auto;
+}
+
+.T_body_head {
+	text-align: center;
+	background-color: #000000;
+	color: white;
+	width: 860.8px;
+	height: 49.6px;
+}
+
+.T_body td,
+.T_body th {
+	border-bottom: 1px solid #dee2e6;
+	padding: .75rem;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+
+.T_body tbody tr:hover {
+	background-color: rgba(0, 0, 0, .075);
+}

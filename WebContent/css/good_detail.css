@@ -1,0 +1,131 @@
+#container {
+	width: 1275.5px;
+	margin: 0 auto;
+}
+#body{
+	width: 1275.5px;
+	display: flexbox;
+	margin:0 auto;
+}
+.top{
+	width: 1275.5px;
+	display: flex;
+	margin-top: 20px;
+}
+.left{
+	width: 385px;
+	height: 385px;
+	float: left;
+	background-color: #fff;
+	background-clip: border-box;
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: .25rem;
+	box-sizing: border-box;
+	vertical-align: middle;
+}
+.left img{
+	border-top-left-radius: calc(.25rem - 1px);
+	border-top-right-radius: calc(.25rem - 1px);
+	width: 100%;
+}
+.right{
+	width: 850.5px;
+	height: 385px;
+	margin-left: 40px;
+}
+h3{
+	font-size: 1.75rem;
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.2;
+}
+.right a{
+	color: #007bff;
+}
+#good label{
+	margin-left: 5px;
+}
+#inputPassword3{
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 16px;
+}
+#inputPassword3:focus{
+	color: #495057;
+	background-color: #fff;
+	border-color: #80bdff;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+.addOrder{
+	color: #fff;
+	width: 106px;
+	height: 38px;
+	color: #fff;
+	background-color: #007bff;
+	border-color: #007bff;
+	border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+	outline: none;
+	box-sizing: border-box;
+	margin-top: 16px;
+}
+.addOrder:hover{
+    color: #fff;
+    background-color: #0062cc;
+    border-color: #0062cc;	
+}
+.bottom{
+	width: 1275.5px;
+	display: flex;
+	margin-top: 20px;
+}
+.bottom ul{
+	border-bottom: 1px solid #dee2e6;
+	box-sizing: border-box;
+}
+.bottom li{
+	float: left;
+	margin-bottom: -1px;
+	box-sizing: border-box;
+}
+.bottom a{
+	display: inline-block;
+	width: 66px;
+	height: 42px;
+	text-align: center; 
+    padding: .5rem 1rem;
+	box-sizing: border-box;
+}
+.addClass{
+	border: 1px solid transparent;
+	border-top-left-radius: .25rem;
+	border-top-right-radius: .25rem;
+	color: #495057;
+	border-color: #dee2e6 #dee2e6 #fff;
+}
+.bottom a:hover{
+	text-decoration: none;
+	color: #0056b3;
+	border-color: #e9ecef;
+}
+.xqy,.csy,.ply{
+	position: absolute;
+	top:530px;
+	width: 700px;
+	height: 150px;
+	border: 1px solid #dee2e6;
+	box-sizing: border-box;
+	padding: 30px 30px;
+}

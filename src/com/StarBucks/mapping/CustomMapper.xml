@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.StarBucks.dao.CustomDao">
+	<select id="search" resultType="com.StarBucks.bean.Custom"><!--返回一个由user_id查询的user对象 -->
+		select * from star_custom where user_name=#{user_name} and status=1
+	</select>
+	<insert id="register">
+		insert into star_custom(user_name,user_paw,sex,regdate,status) 
+		value 
+		(#{user.user_name},#{user.user_paw},#{user.sex},#{user.regdate},#{user.status})
+	</insert>
+</mapper>

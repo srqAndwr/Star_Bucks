@@ -1,0 +1,170 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background-position: center;
+	background-size: cover;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+#container {
+	margin:0 auto;
+}
+
+
+#docu {
+	width: 1275.5px;
+	height: 114px;
+	margin:15px auto;
+}
+
+#docu_ul {
+	width: 939px;
+	height: 114px;
+	float: left;
+}
+
+#docu_ph {
+	padding-top: 16px;
+	padding-left: 30px;
+	box-sizing: border-box;
+	width: 326px;
+	height: 114px;
+	float: right;
+}
+
+#docu_ul h5 {
+	font-size: 1.10rem;
+	font-weight: 500;
+	padding-left: 20px;
+	padding-top: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+	width: 300px;
+}
+
+.uploadb {
+	width: 50px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	height: 30px;
+	color: #fff;
+	background-color: #28a745;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+	text-align: center;
+	line-height: 30px;
+	outline: none;
+	transition: all 2.0s;
+	position: absolute;
+	overflow: hidden;
+	margin-top: 3px;
+	margin-left: 5px;
+}
+
+.uploadb:hover {
+	width: 100px;
+	border-radius: 10px;
+	background-color: #218838;
+}
+
+.image {
+	list-style: none;
+}
+
+.box {
+	width: 1275.5px;
+	height: 600px;
+	position: relative;
+	margin: 20px auto;
+}
+
+.image li {
+	width: 100%;
+	height: 454px;
+	float: left;
+	position: absolute;
+	display: none;
+}
+.image img{
+	width: 1275.5px;
+	height: 600px;
+}
+.num {
+	position: absolute;
+	list-style: none;
+	cursor: pointer;
+	bottom: 20px;
+	left: 581px;
+}
+
+.num li {
+	float: left;
+	color: white;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background-color: gray;
+	margin: 0 4px;
+	text-align: center;
+	line-height: 18px;
+	box-sizing: border-box;
+	transition: all 0.5s;
+}
+.num li:hover{
+	width: 25px;
+	height: 25px;
+}
+.num .current {
+	background-color: red;
+}
+
+.arrow {
+	height: 80px;
+	width: 40px;
+	position: absolute;
+	cursor: pointer;
+	background-color: black;
+	color: white;
+	opacity: 0.5;
+	font-size: 30px;
+	font-weight: 900;
+	text-align: center;
+	line-height: 75px;
+	top: 307px;
+	display: none;
+	transition: all 1.0s;
+}
+.arrow:hover{
+	opacity: 0.8;
+	
+}
+.left {
+	left: 0;
+}
+
+.right {
+	right: 0;
+}
+#foot{
+	width: 1275.5px;
+	height: 100%;
+	margin:-20px auto;
+}
+#foot img{
+	width: 1275.5px;
+	height: 100%;
+}

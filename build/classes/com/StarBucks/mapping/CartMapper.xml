@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.StarBucks.dao.CartDao">
+	<select id="FindAll" resultType="com.StarBucks.bean.Cart">
+		select * from star_cart where custom_id = #{CId}
+	</select>
+	<select id="FindById" resultType="com.StarBucks.bean.Cart">
+		select * from star_cart where id = #{CId}
+	</select>
+	<select id="FindAllGoods" resultType="com.StarBucks.bean.Goods">
+		select sg.* from star_goods sg,star_cart sc where status=1 and sc.goods_id = sg.item_id and custom_id = #{CId}
+	</select>
+	<select id="FindByGCId" resultType="com.StarBucks.bean.Cart">
+		select * from star_cart where goods_id = #{GId} and custom_id = #{CId}
+	</select>
+	<select id="FindByCaCId" resultType="com.StarBucks.bean.Goods">
+		select sg.* from star_goods sg,star_cart sc 
+			where status=1 and sc.goods_id = sg.item_id and custom_id = #{CId} and sc.id = #{CaId}
+	</select>
+	<update id="UpdateNum">
+		update star_cart set 
+		num=#{num}
+		where id=#{id}
+	</update>
+	<delete id="erase">
+		delete from star_cart where id=#{id}
+	</delete>
+	<insert id="insert">
+		insert into star_cart(custom_id,goods_id,num) 
+		value 
+		(#{c.custom_id},#{c.goods_id},#{c.num})
+	</insert>
+</mapper>

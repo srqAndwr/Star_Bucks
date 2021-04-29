@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.StarBucks.dao.BranchDao">
+	<select id="FindAll" resultType="com.StarBucks.bean.Branch">
+		select * from star_branch where status=1
+	</select>
+	<select id="ById" resultType="com.StarBucks.bean.Branch">
+		select * from star_branch where branch_id = #{Id}
+	</select>
+	<select id="ByArea" resultType="com.StarBucks.bean.Branch">
+		select * from star_branch where status=1 and branch_addr like #{area}
+	</select>
+	<insert id="insert">
+		insert into star_branch(branch_name,branch_addr,phone,status) 
+		value 
+		(#{branch.branch_name},#{branch.branch_addr},#{branch.phone},1)
+	</insert>
+	<update id="del">
+		update star_branch set 
+		status = 0
+		where branch_id=#{Id}
+	</update>
+	<update id="update">
+		update star_branch set 
+		branch_name = #{b.branch_name},
+		branch_addr = #{b.branch_addr},
+		phone = #{b.phone}
+		where branch_id=#{b.branch_id}
+	</update>
+</mapper>

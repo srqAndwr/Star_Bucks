@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.StarBucks.dao.OrderDao">
+	<insert id="insertToBePaid">
+		insert into star_order(id,custom_Id,sum,phone,contacts,address,orderTime,status) 
+		value 
+		(#{o.id},#{o.custom_Id},#{o.sum},#{o.phone},#{o.contacts},#{o.address},#{o.orderTime},0)
+	</insert>
+	<insert id="insertPaid">
+		insert into star_order(id,custom_Id,sum,phone,contacts,address,orderTime,status,payTime) 
+		value 
+		(#{o.id},#{o.custom_Id},#{o.sum},#{o.phone},#{o.contacts},#{o.orderTime},#{o.address},0,#{o.payTime})
+	</insert>
+	<select id="FindToBePaid" resultType="com.StarBucks.bean.Order">
+		select * from star_order where custom_Id = #{CId} and status = 0
+	</select>
+	<select id="FindPaid" resultType="com.StarBucks.bean.Order">
+		select * from star_order where custom_Id = #{CId} and status = 1
+	</select>
+	<select id="FindContacts" resultType="com.StarBucks.bean.Custom">
+		select sc.* from star_order so,star_custom sc where so.custom_Id = sc.user_id  and so.status = 1 and so.id = #{OId}
+	</select>
+	<update id="Pay">
+		update star_order set 
+		payTime = #{payTime},status = 1
+		where id=#{OrderId}
+	</update>
+	<delete id="delOrder">
+		delete from star_order where id=#{OrderId}
+	</delete>
+</mapper>

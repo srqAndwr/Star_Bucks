@@ -1,0 +1,55 @@
+@charset "UTF-8";
+.card {
+	height: 361.18px;
+	background-color: #fff;
+	background-clip: border-box;
+	border: 1px solid rgba(0, 0, 0, .125);
+	border-radius: .25rem;
+	box-sizing: border-box;
+	padding: 1.25rem;
+}
+
+.card-text {
+	margin-bottom: 1rem;
+
+}
+
+.All {
+	width: 281px;
+	height: 50px;
+	background-color: #007bff;
+	margin-top: 10px;
+	line-height: 50px;
+	padding-left: 20px;
+	box-sizing: border-box;
+	color: white;
+	border-top-left-radius: .25rem;
+	border-top-right-radius: .25rem;
+}
+.All:hover{
+	cursor:pointer;
+}
+
+.listGroup {
+	width: 281px;
+	height: 397px;
+}
+
+.listGroup a {
+	width: 281px;
+	height: 50px;
+	display: block;
+	border: 1px solid rgba(0, 0, 0, .125);
+	text-align: left;
+	line-height: 50px;
+	color: #495057;
+	padding-left: 1.25rem;
+	margin-bottom: -1px;
+	box-sizing: border-box;
+}
+
+.listGroup a:hover {
+	color: #495057;
+	text-decoration: none;
+	background-color: #f8f9fa;
+}

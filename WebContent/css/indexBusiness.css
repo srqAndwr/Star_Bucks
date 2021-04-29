@@ -1,0 +1,141 @@
+#body {
+	width: 1214.72px;
+	margin: 10px auto;
+}
+
+.b_left {
+	width: 281.18px;
+	display: flex;
+	flex-direction: column;
+	float: left;
+}
+
+
+
+.b_right {
+	width: 903.55px;
+	background-color: #f8f9fa;
+	border: 1px solid rgba(0, 0, 0, .125);
+	border-radius: .25rem;
+	box-sizing: border-box;
+	float: right;
+}
+
+.Mheader {
+	padding: .75rem 1.25rem;
+	margin-bottom: 0;
+	background-color: rgba(0, 0, 0, .03);
+	border-bottom: 1px solid rgba(0, 0, 0, .125);
+	box-sizing: border-box;
+	border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+	text-align: center;
+}
+
+.Mbody {
+	padding: 1.25rem;
+	box-sizing: border-box;
+}
+
+.table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.table thead th {
+	color: #fff;
+	background-color: #212529;
+	border-color: #32383e;
+}
+
+.table td,
+.table th {
+	padding: .75rem;
+	vertical-align: middle;
+	border-top: 1px solid #dee2e6;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.table tbody tr:hover {
+	background-color: rgba(0, 0, 0, .075);
+}
+
+.bt {
+	width: 58px;
+	height: 38px;
+	display: inline-block;
+	color: #007bff;
+	background-color: transparent;
+	border: 1px solid #007bff;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+	box-sizing: border-box;
+}
+
+.bt:hover {
+	color: #fff;
+	background-color: #007bff;
+	border-color: #007bff;
+}
+
+.foot {
+	width: 903.55px;
+	height: 38px;
+	float: right;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.foot li {
+	float: left;
+}
+
+.foot ul {
+	margin-left: 593px;
+}
+
+.foot a,.foot span{
+	line-height: 38px;
+	color: #007bff;
+	background-color: #fff;
+	border: 1px solid #dee2e6;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.foot a:hover,.foot span:hover{
+	color: #0056b3;
+	text-decoration: none;
+	background-color: #e9ecef;
+	border-color: #dee2e6;
+	cursor:pointer;
+}
+
+.first,
+.prev,
+.next {
+	display: inline-block;
+	width: 74px;
+	height: 38px;
+}
+
+.first {
+	border-top-left-radius: .25rem;
+	border-bottom-left-radius: .25rem;
+	box-sizing: border-box;
+}
+
+.last {
+	display: inline-block;
+	width: 90px;
+	height: 38px;
+	border-top-right-radius: .25rem;
+	border-bottom-right-radius: .25rem;
+}
+
+.prev,
+.next {
+	margin-left: -1px;
+}

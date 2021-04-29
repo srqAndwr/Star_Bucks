@@ -1,0 +1,113 @@
+#container{
+	width: 1275.5px;
+	margin: 0 auto;
+}
+#body{
+	width: 1275.5px;
+	display: flex;
+	    background-color: #fff;
+	    background-clip: border-box;
+	    border: 1px solid rgba(0,0,0,.125);
+	    border-radius: .25rem;s
+}
+.head{
+	width: 1275.5px;
+	height: 49px;
+	padding: .75rem 1.25rem;
+	    margin-bottom: 0;
+	    background-color: rgba(0,0,0,.03);
+	    border-bottom: 1px solid rgba(0,0,0,.125);
+		box-sizing: border-box;
+}
+.body_form{
+	width: 1275.5px;
+	height: 310px;
+	    padding: 1.25rem;
+		box-sizing: border-box;
+}
+.left_t{
+	width: 200.45px;
+	height: 38px;
+	display: inline-block;
+	margin-bottom: 1em;
+}
+.right_t{
+	width: 872.04px;
+	height: 38px;
+	display: inline-block;
+	padding-top: .375rem;
+	padding-bottom: .375rem;
+	margin-bottom: 0;
+	line-height: 1.5;
+	color: #212529;
+	background-color: transparent;
+	border: solid transparent;
+	border-width: 1px 0;
+	box-sizing: border-box;
+	font-size: inherit;		
+}
+.right_p{
+	width: 872.04px;
+	height: 38px;
+	display: inline-block;
+	padding: .375rem .75rem;
+	margin-bottom: 0;
+	line-height: 1.5;
+	color: #495057;
+	    background-color: #fff;
+	    background-clip: padding-box;
+	    border: 1px solid #ced4da;
+	    border-radius: .25rem;
+	font-size: inherit;		
+	box-sizing: border-box;
+}
+.right_p:hover{
+	color: #495057;
+	    background-color: #fff;
+	    border-color: #80bdff;
+	    outline: 0;
+	    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+#foot{
+	width: 1275.5px;
+	height: 60px;
+	border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
+	padding: .75rem 1.25rem;
+	background-color: rgba(0,0,0,.03);
+	border-top: 1px solid rgba(0,0,0,.125);
+	box-sizing: border-box;
+}
+.sub{
+	color:  white;
+	background-color: #007bff;
+	border: 1px solid #007bff;
+	cursor: pointer;
+	width: 90px;
+	height: 38px;
+	border-radius: .25rem;
+	text-align: center;
+	line-height: 2.0;
+	font-weight: 400;
+	font-size: 16px;
+	float: right;
+}
+.sub:hover{
+	color: #fff;
+	background-color: #0069d9;
+	border-color: #0062cc;
+}
+.table{
+	margin-bottom: 1rem;
+	border-collapse: collapse;
+	text-align: left;
+}
+.table thead th{
+	vertical-align: bottom;
+	    border-bottom: 2px solid #dee2e6;
+}
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: middle;
+    border-bottom: 1px solid #dee2e6;
+	box-sizing: border-box;
+}

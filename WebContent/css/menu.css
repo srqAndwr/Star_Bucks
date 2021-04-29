@@ -1,0 +1,127 @@
+button {
+	border: none;
+}
+
+#container {
+	width: 1275.5px;
+	margin: 0 auto;
+}
+#left_d {
+	width: 281px;
+	float: left;
+}
+.All {
+	width: 281px;
+	height: 50px;
+	background-color: #007bff;
+	margin-top: 10px;
+	line-height: 50px;
+	padding-left: 20px;
+	box-sizing: border-box;
+	color: white;
+	border-radius: .25rem;
+}
+.All:hover {
+	cursor: pointer;
+}
+.listGroup{
+	width: 281px;
+	height: 397px;
+}
+.listGroup a{
+	width: 281px;
+	height: 50px;
+	display: block;
+	border-bottom: 1px solid rgba(0,0,0,.125);
+	text-align: left;
+	line-height: 50px;
+	color: #495057;
+	padding-left:1.25rem;
+	box-sizing: border-box;
+}
+.listGroup a:hover{
+	    color: #495057;
+	    text-decoration: none;
+	    background-color: #f8f9fa;
+}
+#right_d {
+	width: 904px;
+	float: right;
+}
+.Goods{
+	width: 904px;
+	height: 1165px;
+}
+
+.everGood{
+	width: 286.2px;
+	height: 378.2px;
+	background-color: #fff;
+	background-clip: border-box;
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: 5px;
+	display: inline-block;
+	margin-right: 12px;
+	margin-top: 12px;
+}
+.goodBody{
+	width: 286.2px;
+	height: 92px;
+	padding: 1.25rem;
+	box-sizing: border-box;
+}
+.goodBody a{
+	    color: #007bff;
+	    text-decoration: none;
+}
+.goodBody a:hover{
+	color: #0056b3;
+	    text-decoration: underline;
+}
+.btnPageGroup{
+	width: 311px;
+	height: 80px;
+	margin-left: 590px;
+	margin-top: 30px;
+	box-sizing: border-box;
+}
+.btnPageGroup li{
+	float: left;
+	width: 74px;
+	height: 38px;
+}
+.btnPageGroup a{
+	display: block;
+	    padding: .5rem .75rem;
+	    margin-left: -1px;
+	    line-height: 1.25;
+	    color: #007bff;
+	    background-color: #fff;
+	    border: 1px solid #dee2e6;
+		box-sizing: border-box;
+}
+.btnPageGroup a:hover{
+	z-index: 2;
+	    color: #0056b3;
+	    text-decoration: none;
+	    background-color: #e9ecef;
+	    border-color: #dee2e6;
+}
+.btnPageGroup span{
+	display: block;
+	    padding: .5rem .75rem;
+	    margin-left: -1px;
+	    line-height: 1.25;
+	    color: #007bff;
+	    background-color: #fff;
+	    border: 1px solid #dee2e6;
+		box-sizing: border-box;
+}
+.btnPageGroup span:hover{
+	z-index: 2;
+	    color: #0056b3;
+	    text-decoration: none;
+	    background-color: #e9ecef;
+	    border-color: #dee2e6;
+	    cursor: pointer;
+}
